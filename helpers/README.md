@@ -72,6 +72,17 @@ Retourne une balise `script` pour le script courant. Ajoute également les scrip
 
 Peut prendre des attributs (par défaut: `{}`) et un type d'assets (par défaut: `js`) en paramètres.
 
+
+#### `get_svg`
+Retourne le contenu xml d'une fichier svg. Prend en paramètre `file` qui correspond au nom du fichier ommetant le chemin jusqu'au répertoire `app/assets/images` et l'extension `.svg`.
+```html
+<%= get_svg :icon %>
+```
+```html
+<%= get_svg 'svg/icon' %>
+# Si le chemin du fichier est `app/svg/icon.svg`
+```
+
 #### `enable_turbolinks`
 Active turbolinks dans la vue courante.
 
