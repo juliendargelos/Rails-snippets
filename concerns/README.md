@@ -53,7 +53,7 @@ resources :users, path: '/', param: :username, constraints: {username: User.cons
 
 ## HasSlug
 
-Il est nécessaire d'avoir étendu la classe `String` avec la méthode `to_slug` qui se trouve [ici](http://www.github.com/juliendargelos/Rails-snippets/initializers).
+Il est nécessaire d'avoir étendu la classe `String` avec la méthode `to_slug` qui se trouve [ici](https://github.com/juliendargelos/Rails-snippets/tree/master/concerns).
 Indique qu'une des propriété du modèle a le rôle de slug unique. Le slug est généré à partir d'une propriété du modèle (par défaut `name`) et mis à jour à l'enregistrement de l'instance. La propriété utilisée par défaut pour enregistrer le slug est `slug`.
 Le slug généré est unique, si un slug identique a déjà été trouvé dans la base de données, un incrément sera ajouté à la fin.
 
