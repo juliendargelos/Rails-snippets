@@ -10,6 +10,7 @@ module AssetsHelper
 
 	def current_asset directory, attributes, type, &block
 		asset = current_asset_name
+		type = type.to_s.downcase
 
 		attributes[:media] = 'all' if (type == 'sass' || type == 'scss' || type == 'scss') && !attributes.key? :media
 		attributes['data-turbolinks-track'] = true if !attributes.key? 'data-turbolinks-track' && turbolinks_enabled?
