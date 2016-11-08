@@ -12,14 +12,14 @@ Il est intéressant d'utiliser les helpers correspondants qui se trouvent [ici](
 
 Ajoute plusieurs méthodes utiles à la classe `String`.
 
-### `ucfirst`
+#### `ucfirst`
 Retourne une chaîne de caractères avec la première lettre en majuscule.
 ```ruby
 str1 = 'bonjour'
 str2 = str1.ucfirst # "Bonjour"
 ```
 
-### `to_slug`
+#### `to_slug`
 Retourne un slug à partir de la chaîne de caractère.
 ```ruby
 str = "L'émission est annulée. Elle n'a fait que 0.02% d'audience"
