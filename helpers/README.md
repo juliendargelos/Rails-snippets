@@ -11,9 +11,11 @@ Contient des méthodes utiles dans les vues.
 Permet de facilement ajouter un titre aux pages.
 
 - Dans un layout:
+
 	<title>Nom du site<%= ' - ' + yield(:title) if content_for?(:title) %></title>
 
 - Dans une vue:
+
 	<% title 'Page 1' %>
 
 ## AssetsHelpers
@@ -52,6 +54,7 @@ Il n'est pas très utile d'utiliser directement cette méthode; les deux suivant
 
 #### `current_stylesheet`
 Retourne une balise `link` pour la feuille de style courante:
+
 	<%= current_stylesheet %>
 	<!-- '<link rel="stylesheet" href="/assets/users-show.self-2717328c26bcad773e8024db51d8a2e6fde887c25bb67f1ed2f36a34d42e0fd8.css?body=1" media="all" data-turbolinks-track="true">' !-->
 
@@ -59,6 +62,7 @@ Peut prendre des attributs (par défaut: `{}`) et un type d'assets (par défaut:
 
 #### `current_javascript`
 Retourne une balise `script` pour le script courant. Ajoute également les scripts utiles à turbolinks si il est activé.
+
 	<%= current_javascript %>
 	<!-- '<script type="javascript" src="/assets/users-show.self-2717328c26bcad773e8024db51d8a2e6fde887c25bb67f1ed2f36a34d42e0fd8.js?body=1" data-turbolinks-track="true"></script>' !-->
 
