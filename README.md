@@ -1,8 +1,8 @@
 # Rails snippets
 
-**C O D E&nbsp;&nbsp;&nbsp;&nbsp;I N S T A B L E**
-
 > Fichiers utiles dans un projet rails.
+
+**C O D E&nbsp;&nbsp;&nbsp;&nbsp;I N S T A B L E**
 
 ## [Concerns](https://github.com/juliendargelos/Rails-snippets/tree/master/concerns)
 
